@@ -47,6 +47,9 @@ public class DBManager
             statement.setFloat(1, vector2D.getX());
             statement.setFloat(2, vector2D.getY());
 
+            // run the command on the Database
+            statement.executeUpdate();
+
             // get the VectorID
             resultSet = statement.getGeneratedKeys();
             while(resultSet.next())
