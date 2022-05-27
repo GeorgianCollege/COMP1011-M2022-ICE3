@@ -6,6 +6,7 @@ package ca.georgiancollege.comp1011m2022ice3;
 public class Vector2D
 {
     // Private Instance Members
+    private int m_id;
     private float m_x;
     private float m_y;
 
@@ -27,6 +28,14 @@ public class Vector2D
     }
 
     // Public Properties (Getters and Setters)
+
+    public int getID() {
+        return m_id;
+    }
+
+    public void setID(int id) {
+        m_id = id;
+    }
 
     public float getY()
     {
